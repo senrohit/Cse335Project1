@@ -4,8 +4,18 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Bird.h</itemPath>
+      <itemPath>BubbleSort.h</itemPath>
+      <itemPath>BubbleSortDecreasing.h</itemPath>
+      <itemPath>BubbleSortIncreasing.h</itemPath>
+      <itemPath>Cat.h</itemPath>
       <itemPath>Dog.h</itemPath>
       <itemPath>Pet.h</itemPath>
+      <itemPath>PetDatabaseSortable.h</itemPath>
+      <itemPath>PetDatabaseSortableByName.h</itemPath>
+      <itemPath>PetDatabaseSortableByPrice.h</itemPath>
+      <itemPath>PetDatabaseSortableByType.h</itemPath>
+      <itemPath>PetDatabaseSortableByWeight.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -44,9 +54,29 @@
           </linkerDynSerch>
         </linkerTool>
       </compileType>
+      <item path="Bird.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BubbleSort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BubbleSortDecreasing.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BubbleSortIncreasing.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Dog.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Pet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByName.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByPrice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByWeight.h" ex="false" tool="3" flavor2="0">
       </item>
       <folder path="TestFiles">
         <linkerTool>
@@ -85,9 +115,29 @@
           </linkerDynSerch>
         </linkerTool>
       </compileType>
+      <item path="Bird.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BubbleSort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BubbleSortDecreasing.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BubbleSortIncreasing.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Cat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Dog.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Pet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByName.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByPrice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSortableByWeight.h" ex="false" tool="3" flavor2="0">
       </item>
       <folder path="TestFiles">
         <linkerTool>

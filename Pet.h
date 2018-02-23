@@ -23,23 +23,17 @@ protected:
     string _type;
     unsigned int _weight;
     double _price;
-    // getters for the protected data members
-    string GetName() const{
-        return this->_name;
-    }
-    string GetType() const{
-        return this->_type;
-    }
-    unsigned int GetWeight() const{
-        return this->_weight;
-    }
-    double GetPrice() const{
-        return this->_price;
-    }
+    
+public:
+    // constructor 
+    //Pet(string name, string type, unsigned int weight, double price) {};
+    // virtual getters for the protected data members
+    virtual string GetName() const = 0;
+    virtual string GetType() const = 0;
+    virtual unsigned int GetWeight() const = 0;
+    virtual double GetPrice() const = 0;
     // basic virtual print non-implemented function
     virtual void print() const = 0;
-    // constructor 
-    Pet(){}
 };
 
 

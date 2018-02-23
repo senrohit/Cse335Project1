@@ -5,42 +5,40 @@
  */
 
 /* 
- * File:   Dog.h
- * Author: Ross
+ * File:   Bird.h
+ * Author: justi
  *
- * Created on February 11, 2018, 5:19 PM
+ * Created on February 23, 2018, 10:57 AM
  */
 
-#ifndef DOG_H
-#define DOG_H
+#ifndef BIRD_H
+#define BIRD_H
 
 #include"Pet.h"
 
-class Dog:public Pet{
+class Bird:public Pet{
 protected:
-    // special data member only for dog
-    string _category;
-    
-    
+    // special data member only for bird
+    bool _nocturnal;
+
 public:
-    // constructor for dog
-    Dog(string name, string type, double price, unsigned int weight,
-            string category){
+    // constructor for bird
+    Bird(string name, string type, double price, unsigned int weight, 
+            bool nocturnal){
         _name = name;
         _type = type;
         _weight = weight;
         _price = price;
-        _category = category;
+        _nocturnal = nocturnal;
     }
     //getter for name
     virtual string GetName() const{
         return this->_name;
     }
-    //getter for type
+    // getter for type
     virtual string GetType() const{
         return this->_type;
     }
-    //getter for weight
      virtual unsigned int GetWeight() const{
         return this->_weight;
     }
@@ -48,9 +46,9 @@ public:
     virtual double GetPrice() const{
         return this->_price;
     }
-    // getter for category
-    string GetCategory() const{
-        return this->_category;
+    // getter for nocturnal
+    bool GetNocturnal() const{
+        return this->_nocturnal;
     }
     // print function gets implemented here to print out info
     virtual void print() const{
@@ -59,11 +57,10 @@ public:
         cout << "Type:   " << setw(10) << GetType();
         cout << "Weight:   " << setw(4) << GetWeight();
         cout << "Price:   " << setw(8) << GetPrice();
-        cout << setw(13) << "Category:" << GetCategory(); 
+        cout << setw(13) << "Nocturnal:" << GetNocturnal(); 
         cout << endl;
     }
 };
 
-
-#endif /* DOG_H */
+#endif /* BIRD_H */
 
