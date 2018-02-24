@@ -17,14 +17,11 @@
 #include "Pet.h"
 #include "PetDatabaseSearchable.h"
 #include "PetDatabaseSortableByType.h"
-#include "BubbleSortIncreasing.h"
 
 class PetDatabaseSearchableByType:public PetDatabaseSearchable{
 public:
     // constructor
     PetDatabaseSearchableByType(PetDatabaseSortableByType* pdsbt){
-        BubbleSortIncreasing bs;
-        bs.sort(pdsbt);
         _petVec = pdsbt->getVector();
     }
     // set Query function
