@@ -44,7 +44,7 @@ public:
         return this->_weight;
     }
     //getter for price
-    virtual double GetPrice() const{
+    virtual float GetPrice() const{
         return this->_price;
     }
     // getter for fluffy

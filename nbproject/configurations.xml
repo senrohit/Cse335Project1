@@ -4,13 +4,20 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>BinarySearch.h</itemPath>
       <itemPath>Bird.h</itemPath>
       <itemPath>BubbleSort.h</itemPath>
       <itemPath>BubbleSortDecreasing.h</itemPath>
       <itemPath>BubbleSortIncreasing.h</itemPath>
       <itemPath>Cat.h</itemPath>
       <itemPath>Dog.h</itemPath>
+      <itemPath>Fish.h</itemPath>
       <itemPath>Pet.h</itemPath>
+      <itemPath>PetDatabaseSearchable.h</itemPath>
+      <itemPath>PetDatabaseSearchableByName.h</itemPath>
+      <itemPath>PetDatabaseSearchableByPrice.h</itemPath>
+      <itemPath>PetDatabaseSearchableByType.h</itemPath>
+      <itemPath>PetDatabaseSearchableByWeight.h</itemPath>
       <itemPath>PetDatabaseSortable.h</itemPath>
       <itemPath>PetDatabaseSortableByName.h</itemPath>
       <itemPath>PetDatabaseSortableByPrice.h</itemPath>
@@ -51,9 +58,12 @@
           <linkerDynSerch>
             <pElem>.</pElem>
             <pElem>.</pElem>
+            <pElem>.</pElem>
           </linkerDynSerch>
         </linkerTool>
       </compileType>
+      <item path="BinarySearch.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Bird.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="BubbleSort.h" ex="false" tool="3" flavor2="0">
@@ -66,7 +76,19 @@
       </item>
       <item path="Dog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Fish.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Pet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByName.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByPrice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByWeight.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PetDatabaseSortable.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -81,6 +103,7 @@
       <folder path="TestFiles">
         <linkerTool>
           <linkerDynSerch>
+            <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>
           </linkerDynSerch>
@@ -112,9 +135,12 @@
           <linkerDynSerch>
             <pElem>.</pElem>
             <pElem>.</pElem>
+            <pElem>.</pElem>
           </linkerDynSerch>
         </linkerTool>
       </compileType>
+      <item path="BinarySearch.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Bird.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="BubbleSort.h" ex="false" tool="3" flavor2="0">
@@ -127,7 +153,19 @@
       </item>
       <item path="Dog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Fish.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Pet.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByName.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByPrice.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByType.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PetDatabaseSearchableByWeight.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PetDatabaseSortable.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -142,6 +180,7 @@
       <folder path="TestFiles">
         <linkerTool>
           <linkerDynSerch>
+            <pElem>.</pElem>
             <pElem>.</pElem>
             <pElem>.</pElem>
           </linkerDynSerch>

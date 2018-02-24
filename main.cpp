@@ -22,24 +22,21 @@ using namespace std;
 #include "Pet.h"
 #include "Cat.h"
 #include "Dog.h"
-//#include "Fish.h"
+#include "Fish.h"
 #include "Bird.h"
 #include "PetDatabaseSortableByName.h"
 #include "PetDatabaseSortableByType.h"
 #include "PetDatabaseSortableByPrice.h"
 #include "PetDatabaseSortableByWeight.h"
-//#include "PetDatabaseSearchableByName.h"
-//#include "PetDatabaseSearchableByType.h"
-//#include "PetDatabaseSearchableByPrice.h"
-//#include "PetDatabaseSearchableByWeight.h"
-//#include "BinarySearch.h"
+#include "PetDatabaseSearchableByName.h"
+#include "PetDatabaseSearchableByType.h"
+#include "PetDatabaseSearchableByPrice.h"
+#include "PetDatabaseSearchableByWeight.h"
+#include "BinarySearch.h"
 #include "BubbleSortIncreasing.h"
 #include "BubbleSortDecreasing.h"
 #include <iostream>
 
-//using std::cout;
-//using std::endl;
-//using std::vector;
 
 int main(int argc, char** argv)
 {
@@ -61,14 +58,14 @@ int main(int argc, char** argv)
     dogPets.push_back(&Maggie2); 
     dogPets.push_back(&Maggie3); 
     
-//    Fish Casper1("Casper1","Cod", 10.99 ,1, "Saltwater"); 
-//    Fish Casper2("Casper2","Catfish",9.99, 2, "FreshWater"); 
-//    Fish Casper3("Casper3","Herring",12 , 1 , "AnyWater");
-//    
-//    vector<Pet*> fishPets;
-//    fishPets.push_back(&Casper1);  
-//    fishPets.push_back(&Casper2); 
-//    fishPets.push_back(&Casper3);
+    Fish Casper1("Casper1","Cod", 10.99 ,1, "Saltwater"); 
+    Fish Casper2("Casper2","Catfish",9.99, 2, "FreshWater"); 
+    Fish Casper3("Casper3","Herring",12 , 1 , "AnyWater");
+    
+    vector<Pet*> fishPets;
+    fishPets.push_back(&Casper1);  
+    fishPets.push_back(&Casper2); 
+    fishPets.push_back(&Casper3);
     
     Cat Smokey1("Smokey1","Siamese", 200, 30 , false); 
     Cat Smokey2("Smokey2","Persian", 299.99,45, true); 
@@ -82,7 +79,7 @@ int main(int argc, char** argv)
     vector<Pet*> allPets;
     allPets.insert(allPets.end(), birdPets.begin(), birdPets.end());
     allPets.insert(allPets.end(), dogPets.begin(), dogPets.end());
-    //allPets.insert(allPets.end(), fishPets.begin(), fishPets.end());
+    allPets.insert(allPets.end(), fishPets.begin(), fishPets.end());
     allPets.insert(allPets.end(), catPets.begin(), catPets.end());
     
     BubbleSortIncreasing bs;
@@ -128,32 +125,32 @@ int main(int argc, char** argv)
     bs.sort(&petDatabaseSortableByWeight);
     petDatabaseSortableByWeight.DisplayRecords();
     
-//    BinarySearch s;
-//    
-//    cout<<"*********************** Searching for Name Casper3 ..."<<endl;
-//    PetDatabaseSearchableByName SName(&petDatabaseSortableByName);
-//    SName.setQuery("Casper3");
-//    SName.getPet(s.search(&SName))->print();
-//    
-//    cout << "*********************** Searching for Type Penguin ..."<<endl;
-//    PetDatabaseSearchableByType SType(&petDatabaseSortableByType);
-//    SType.setQuery("Penguin");
-//    SType.getPet(s.search(&SType))->print();
-//    
-//    cout << "*********************** Searching by Price $99.99 ..."<<endl;
-//    PetDatabaseSearchableByPrice SPrice(&petDatabaseSortableByPrice);
-//    SPrice.setQuery(99.99);
-//    SPrice.getPet(s.search(&SPrice))->print();
-//    
-//    cout << "*********************** Searching by Weight 2 lbs..."<<endl;
-//    PetDatabaseSearchableByWeight SWeight(&petDatabaseSortableByWeight);
-//    SWeight.setQuery(2);
-//    SWeight.getPet(s.search(&SWeight))->print();
-//    
-//    cout << "*********************** Searching for Name Charlie ..."<<endl;
-//    SName.setQuery("Charlie");
-//    if (s.search(&SName) == -1) cout << "Charlie not found." << endl;
-//    else cout << " Search failed." << endl;
+    BinarySearch s;
+    
+    cout<<"*********************** Searching for Name Casper3 ..."<<endl;
+    PetDatabaseSearchableByName SName(&petDatabaseSortableByName);
+    SName.setQuery("Casper3");
+    SName.getPet(s.search(&SName))->print();
+    
+    cout << "*********************** Searching for Type Penguin ..."<<endl;
+    PetDatabaseSearchableByType SType(&petDatabaseSortableByType);
+    SType.setQuery("Penguin");
+    SType.getPet(s.search(&SType))->print();
+    
+    cout << "*********************** Searching by Price $99.99 ..."<<endl;
+    PetDatabaseSearchableByPrice SPrice(&petDatabaseSortableByPrice);
+    SPrice.setQuery(99.99);
+    SPrice.getPet(s.search(&SPrice))->print();
+    
+    cout << "*********************** Searching by Weight 2 lbs..."<<endl;
+    PetDatabaseSearchableByWeight SWeight(&petDatabaseSortableByWeight);
+    SWeight.setQuery(2);
+    SWeight.getPet(s.search(&SWeight))->print();
+    
+    cout << "*********************** Searching for Name Charlie ..."<<endl;
+    SName.setQuery("Charlie");
+    if (s.search(&SName) == -1) cout << "Charlie not found." << endl;
+    else cout << " Search failed." << endl;
     
     return 0;
 }

@@ -6,7 +6,7 @@
 
 /* 
  * File:   Pet.h
- * Author: Ross
+ * Author: Rohit & Justin
  *
  * Created on February 11, 2018, 4:55 PM
  */
@@ -17,21 +17,18 @@
 // base class Pet
 class Pet{
 protected:
-    // vector to contain all the pet info
-    // protected data members so that the client cant access them
+    // protected data members so that the client can't access them
     string _name;
     string _type;
     unsigned int _weight;
     double _price;
     
 public:
-    // constructor 
-    //Pet(string name, string type, unsigned int weight, double price) {};
     // virtual getters for the protected data members
     virtual string GetName() const = 0;
     virtual string GetType() const = 0;
     virtual unsigned int GetWeight() const = 0;
-    virtual double GetPrice() const = 0;
+    virtual float GetPrice() const = 0;
     // basic virtual print non-implemented function
     virtual void print() const = 0;
 };

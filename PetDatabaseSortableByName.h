@@ -6,7 +6,7 @@
 
 /* 
  * File:   PetDataBaseSortableByName.h
- * Author: justi
+ * Author: Justin
  *
  * Created on February 23, 2018, 11:21 AM
  */
@@ -28,6 +28,10 @@ public:
         for (int i = 0; i < _petVec.size(); ++i) {
             _petVec[i]->print();
         }
+    }
+    // returns the vector for use in Searchable class
+    vector<Pet*> getVector(){
+        return _petVec;
     }
 protected:
     //member variable of a vector of pet pointers

@@ -29,6 +29,10 @@ public:
             _petVec[i]->print();
         }
     }
+    // returns the vector for use in Searchable class
+    vector<Pet*> getVector(){
+        return _petVec;
+    }
 protected:
     //member variable of a vector of pet pointers
     vector<Pet*> _petVec;
