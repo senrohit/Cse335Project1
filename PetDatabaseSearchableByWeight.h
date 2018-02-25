@@ -24,6 +24,8 @@ public:
     PetDatabaseSearchableByWeight(PetDatabaseSortableByWeight* pdsbw){
         _petVec = pdsbw->getVector();
     }
+    // destructor
+    ~PetDatabaseSearchableByWeight(){}
     // set Query function
     void setQuery(unsigned int i){
         _query = i;

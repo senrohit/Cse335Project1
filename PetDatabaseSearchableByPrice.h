@@ -24,6 +24,8 @@ public:
     PetDatabaseSearchableByPrice(PetDatabaseSortableByPrice* pdsbp){
         _petVec = pdsbp->getVector();
     }
+    // destructor
+    ~PetDatabaseSearchableByPrice(){}
     // set Query function
     void setQuery(float num){
         _query = num;

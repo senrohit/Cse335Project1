@@ -24,6 +24,8 @@ public:
     PetDatabaseSearchableByName(PetDatabaseSortableByName* pdsbn){
         _petVec = pdsbn->getVector();
     }
+    // destructor
+    ~PetDatabaseSearchableByName(){}
     // set Query function
     void setQuery(string str){
         _query = str;

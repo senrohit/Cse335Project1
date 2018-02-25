@@ -32,6 +32,8 @@ public:
         _price = price;
         _watertype = watertype;
     }
+    // destructor
+    ~Fish(){}
     //getter for name
     virtual string GetName() const{
         return this->_name;

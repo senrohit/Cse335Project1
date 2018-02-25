@@ -32,6 +32,8 @@ public:
         _price = price;
         _category = category;
     }
+    // destructor
+    ~Dog(){}
     //getter for name
     virtual string GetName() const{
         return this->_name;

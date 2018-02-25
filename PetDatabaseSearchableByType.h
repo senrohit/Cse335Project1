@@ -24,6 +24,8 @@ public:
     PetDatabaseSearchableByType(PetDatabaseSortableByType* pdsbt){
         _petVec = pdsbt->getVector();
     }
+    // destructor
+    ~PetDatabaseSearchableByType(){}
     // set Query function
     void setQuery(string str){
         _query = str;
