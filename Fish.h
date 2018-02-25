@@ -5,32 +5,35 @@
  */
 
 /* 
- * File:   Cat.h
- * Author: justi
+ * File:   Fish.h
+ * Author: Rohit
  *
- * Created on February 23, 2018, 11:01 AM
+ * Created on February 23, 2018, 6:06 PM
  */
 
-#ifndef CAT_H
-#define CAT_H
+#ifndef FISH_H
+#define FISH_H
 
 #include"Pet.h"
 
-class Cat:public Pet{
+class Fish:public Pet{
 protected:
-    // special data member only for cat
-    bool _fluffy;
+    // special data member only for dog
+    string _watertype;
+    
     
 public:
-    // constructor for cat
-    Cat(string name, string type, double price, unsigned int weight,
-            bool fluffy){
+    // constructor for dog
+    Fish(string name, string type, double price, unsigned int weight,
+            string watertype){
         _name = name;
         _type = type;
         _weight = weight;
         _price = price;
-        _fluffy = fluffy;
+        _watertype = watertype;
     }
+    // destructor
+    ~Fish(){}
     //getter for name
     virtual string GetName() const{
         return this->_name;
@@ -43,13 +46,13 @@ public:
      virtual unsigned int GetWeight() const{
         return this->_weight;
     }
-    //getter for price
+     //getter for price
     virtual float GetPrice() const{
         return this->_price;
     }
-    // getter for fluffy
-    bool GetFluffy() const{
-        return this->_fluffy;
+    // getter for category
+    string GetWaterType() const{
+        return this->_watertype;
     }
     // print function gets implemented here to print out info
     virtual void print() const{
@@ -58,10 +61,11 @@ public:
         cout << "Type:   " << setw(10) << GetType();
         cout << "Weight:   " << setw(4) << GetWeight();
         cout << "Price:   " << setw(8) << GetPrice();
-        cout << setw(13) << "Fluffy:" << GetFluffy(); 
+        cout << setw(13) << "WaterType:" << GetWaterType(); 
         cout << endl;
     }
 };
 
-#endif /* CAT_H */
+
+#endif /* FISH_H */
 

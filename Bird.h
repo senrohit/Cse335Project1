@@ -6,7 +6,7 @@
 
 /* 
  * File:   Bird.h
- * Author: justi
+ * Author: justin
  *
  * Created on February 23, 2018, 10:57 AM
  */
@@ -43,7 +43,7 @@ public:
         return this->_weight;
     }
      //getter for price
-    virtual double GetPrice() const{
+    virtual float GetPrice() const{
         return this->_price;
     }
     // getter for nocturnal

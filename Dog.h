@@ -6,7 +6,7 @@
 
 /* 
  * File:   Dog.h
- * Author: Ross
+ * Author: Rohit
  *
  * Created on February 11, 2018, 5:19 PM
  */
@@ -32,6 +32,8 @@ public:
         _price = price;
         _category = category;
     }
+    // destructor
+    ~Dog(){}
     //getter for name
     virtual string GetName() const{
         return this->_name;
@@ -45,7 +47,7 @@ public:
         return this->_weight;
     }
      //getter for price
-    virtual double GetPrice() const{
+    virtual float GetPrice() const{
         return this->_price;
     }
     // getter for category

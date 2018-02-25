@@ -6,7 +6,7 @@
 
 /* 
  * File:   PetDataBaseSortable.h
- * Author: justi
+ * Author: justin
  *
  * Created on February 23, 2018, 11:22 AM
  */
