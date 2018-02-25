@@ -23,7 +23,7 @@ protected:
     
     
 public:
-    // constructor for dog
+    // constructor for fish
     Fish(string name, string type, double price, unsigned int weight,
             string watertype){
         _name = name;

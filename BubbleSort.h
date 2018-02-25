@@ -32,7 +32,7 @@ public:
             n--;
         }
     }
-    virtual bool needSwap(PetDatabaseSortable* sv, int i, int j) const = 0;
+    virtual bool needSwap(PetDatabaseSortable* pdb, int i, int j) const = 0;
 };
 #endif /* BUBBLESORT_H */
 

@@ -31,6 +31,8 @@ public:
         _price = price;
         _fluffy = fluffy;
     }
+    //Destructor
+    ~Cat(){}
     //getter for name
     virtual string GetName() const{
         return this->_name;

@@ -31,6 +31,7 @@ public:
         _price = price;
         _nocturnal = nocturnal;
     }
+    ~Bird(){}
     //getter for name
     virtual string GetName() const{
         return this->_name;

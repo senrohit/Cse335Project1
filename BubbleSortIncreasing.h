@@ -18,6 +18,11 @@
 #include "PetDatabaseSortable.h"
 
 class BubbleSortIncreasing: public BubbleSort {
+public:
+    //default constructor 
+    BubbleSortIncreasing() {}
+    //destructor
+    ~BubbleSortIncreasing() {}
 private:
     bool needSwap(PetDatabaseSortable* pdb, int i, int j) const {
         return !pdb->smaller(i, j);

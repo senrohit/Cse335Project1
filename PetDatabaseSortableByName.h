@@ -23,6 +23,8 @@ public:
     PetDatabaseSortableByName(vector<Pet*> petVec) {
         _petVec = petVec;
     }
+    //destructor
+    ~PetDatabaseSortableByName() {}
     //Display all record
     virtual void DisplayRecords() const {
         for (int i = 0; i < _petVec.size(); ++i) {
@@ -30,7 +32,7 @@ public:
         }
     }
     // returns the vector for use in Searchable class
-    vector<Pet*> getVector(){
+    vector<Pet*> getVector() const{
         return _petVec;
     }
 protected:

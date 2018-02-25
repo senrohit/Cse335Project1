@@ -23,6 +23,8 @@ public:
     PetDatabaseSortableByType(vector<Pet*> petVec) {
         _petVec = petVec;
     }
+    //destructor
+    ~PetDatabaseSortableByType() {}
     //Display all record
     virtual void DisplayRecords() const {
         for (int i = 0; i < _petVec.size(); ++i) {

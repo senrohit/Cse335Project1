@@ -31,7 +31,7 @@ public:
         _query = str;
     }
     // get pet function to display the pet
-    Pet* getPet(int i){
+    Pet* getPet(int i) const{
         return _petVec[i];
     }
 protected:
